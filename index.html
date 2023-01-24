@@ -1,24 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Bois Place</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <title>Canvas Solution</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="navbar">
-        <button class="reset-button">Reset</button>
-        <input type="color" value="#00eeff" class="color">
-    </div>
+        <div class="navbar">
+            <!--<button class="reset-button">Reset</button>-->
+            <input type="range" class="slider" min="0" max="20" value="1" id="timeline_speed">
+            <input type="button" class="normal_button" style="background-color: rgb(255, 255, 255)" value="Timeline" id="timeline_button">
+            <input type="color" class="color_button" value="#ffffff" id="color1">
+            <input type="color" class="color_button" value="#ff0000" id="color2">
+            <input type="color" class="color_button" value="#00ff00" id="color3">
+            <input type="color" class="color_button" value="#0000ff" id="color4">
+            <input type="color" class="color_button" value="#000000" id="color5">
+            <input type="button" class="normal_button" style="background-color: rgb(255, 255, 255)" value="Grid" id="grid_button">
+            <input type="button" class="normal_button" style="background-color: rgb(255, 255, 255)" value="?" id="info_button">
+        </div>
 
-    <div class="container"></div>
 
-    <script src="client.js"></script>
-</body>
+        <div id="background">
+            <div id="canvas-container">
+                <canvas id="my-canvas"></canvas>
+                <canvas id="my-canvas-grid"></canvas>
+            </div>
+        </div>
+
+
+
+        <script src="client.js"></script>
+    </body>
+
 </html>
